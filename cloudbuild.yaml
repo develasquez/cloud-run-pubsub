@@ -18,5 +18,4 @@
    - 'REGION'
  images:
  - 'gcr.io/$PROJECT_ID/test-pubsub:$COMMIT_SHA'
-options:
- logging: CLOUD_LOGGING_ONLY
+logsBucket: 'gs://${PROJECT_ID}-upload'
