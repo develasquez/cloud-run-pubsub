@@ -20,7 +20,7 @@ app.post('/', (req, res) => {
     const pubSubMessage = req.body.message;
     const data = pubSubMessage.data
       ? Buffer.from(pubSubMessage.data, 'base64').toString().trim()
-      : '';
+      : ''; 
     console.log(data);
     res.status(204).send();
   });
