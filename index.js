@@ -21,7 +21,6 @@ app.post('/', (req, res) => {
     const data = pubSubMessage.data
       ? Buffer.from(pubSubMessage.data, 'base64').toString().trim()
       : '';
-  
     console.log(data);
     res.status(204).send();
   });
