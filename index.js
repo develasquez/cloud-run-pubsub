@@ -1,6 +1,6 @@
 const Buffer = require('safe-buffer').Buffer;
-const Storage = require('@google-cloud/storage');
-const storage = Storage();
+const { Storage } = require("@google-cloud/storage");
+const storage = new Storage();
 const express = require('express');
 const app = express();
 app.use(express.json());
