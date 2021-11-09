@@ -15,7 +15,7 @@ app.post('/', (req, res) => {
       console.error(`error: ${msg}`);
       res.status(400).send(`Bad Request: ${msg}`);
       return;
-    } 
+    }  
   
     const pubSubMessage = req.body.message;
     const data = pubSubMessage.data
